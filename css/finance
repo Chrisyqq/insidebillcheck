@@ -1,0 +1,359 @@
+.container{
+    color: #000000;
+}
+/* public start */
+.btn-finance-repair{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background: #3ab2f0;
+    box-shadow: 0 2px 2px #30567c;
+    color: #ffffff;
+}
+.tough-font{
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+.font-color-purple{
+    color: #7030a0;
+}
+.font-color-red{
+    color: #ff0000;
+}
+.finance-underline{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* public end */
+
+.finance-header{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #c9c9c9;
+}
+.finance-header .left span{
+    float: left;
+    line-height: 90px;
+    margin-left: 10px;
+}
+.finance-bill-icon{
+    background: url("../img/financebill.png") no-repeat center;
+    width: 26px;
+    height: 40px;
+    float: left;
+    margin-top: 25px;
+    background-size: 100%;
+}
+.finance-header .right{
+    float: right;
+    width: auto;
+    height: 90px;
+}
+.finance-header .right .form-group{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.finance-header .right .form-group label{
+    line-height: 28px;
+    margin-right: 10px;
+}
+.finance-list-title{
+    width: 100%;
+    height: 40px;
+}
+.finance-list-title .title-sun{
+    margin-right: 40px;
+    float: left;
+    line-height: 40px;
+    position: relative;
+}
+.finance-list-title .finance-data-normal:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    left: -20px;
+    background: url("../img/normal.png") no-repeat center;
+    background-size: 100%;
+}
+.finance-list-title .finance-data-attention:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    left: -20px;
+    background: url("../img/attention.png") no-repeat center;
+    background-size: 100%;
+}
+.finance-list-title .finance-data-unusual:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    left: -20px;
+    background: url("../img/unusual.png") no-repeat center;
+    background-size: 100%;
+}
+.finance-bill-list{
+    width: 100%;
+    height: auto;
+}
+.finance-bill-list .list-sun{
+    min-height: 30px;
+    margin-left: 9px;
+    border-bottom: 1px dashed #b6b6b6;
+    position: relative;
+}
+.finance-bill-list .list-sun-bottom{
+    border-bottom: none !important;
+}
+.finance-bill-list .list-sun:before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #ffc000;
+}
+.finance-bill-list .list-sun-bottom :before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #ffffff !important;
+}
+.finance-bill-list .list-sun .list-sun-title{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.finance-bill-list .list-sun .list-sun-title:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    right: 0;
+    background: url("../img/turndown.png") no-repeat center;
+    background-size: 100%;
+
+}
+.finance-bill-list .list-sun .list-sun-title .left{
+    position: relative;
+    margin-left: 12px;
+    float: left;
+}
+.finance-bill-list .list-sun .list-sun-title .right{
+    float: right;
+    margin-right: 30px;
+}
+.finance-active-normal .finance-data:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: -20px;
+    background: url("../img/normal.png") no-repeat center;
+    background-size: 100%;
+    z-index: 100;
+}
+.finance-active-attention .finance-data:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: -20px;
+    background: url("../img/attention.png") no-repeat center;
+    background-size: 100%;
+    z-index: 100;
+}
+.finance-active-unusual .finance-data:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: -20px;
+    background: url("../img/unusual.png") no-repeat center;
+    background-size: 100%;
+    z-index: 100;
+}
+.list-sun-title .left{
+    position: relative;
+}
+
+.finance-bill-list .list-sun .list-sun-body{
+    width: 100%;
+    height: auto;
+    padding-left: 24px;
+    font-size: 12px;
+}
+.finance-bill-list .list-sun .list-sun-body p{
+    line-height: 12px;
+}
+
+/* international-roaming */
+.roaming{
+    width: 580px;
+    margin: 0 auto 0 auto;
+    color: #000000;
+}
+.roaming-place{
+    width: 990px;
+    margin: 0 auto 0 auto;
+    color: #000000;
+}
+.roaming .head{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.roaming-place .head{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.roaming a{
+    color: #7030a0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.roaming .place-choose{
+    color: #000000;
+    font-weight: bolder;
+}
+.roaming .place-choose span{
+    margin-right: 30px;
+}
+.roaming .this-place{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.roaming-table{
+    width: 100%;
+}
+.roaming-table td{
+    text-align: center;
+    color: #7030a0;
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* local-roaming */
+.roaming-sounds{
+    width: 100%;
+    float: left;
+    background: #d9d9d9;
+}
+.roaming-sounds .bg-deep{
+    width: 100%;
+    background: #a6a6a6;
+}
+.roaming-sounds .sounds-one{
+    width: 90px;
+    height: 270px;
+    float: left;
+    text-align: center;
+    line-height: 270px;
+    border: solid 1px #000000;
+    margin-left: -1px;
+    font-weight: bolder;
+}
+.roaming-sounds .sounds-two{
+    width: 100px;
+    height: 270px;
+    float: left;
+    text-align: center;
+    border: solid 1px #000000;
+    margin-left: -1px;
+    font-weight: bolder;
+}
+
+.roaming-sounds .sounds-two .list-one{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-two .list-two{
+    width: 100%;
+    height: 85px;
+    border-bottom: solid 1px #000000;
+}
+
+.roaming-sounds .sounds-two .list-three{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-two .list-four{
+    width: 100%;
+    height: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.roaming-sounds .sounds-three{
+    width: 60px;
+    height: 270px;
+    float: left;
+    text-align: center;
+    border: solid 1px #000000;
+    margin-left: -1px;
+    font-weight: bolder;
+}
+.roaming-sounds .sounds-three .list-one{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-two{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-three{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-four{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-five{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>财务疑义一键诊断</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/finance.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="finance-header">
+        <div class="left">
+            <div class="finance-bill-icon"></div>
+            <span class="tough-font">账单费用争议</span>
+        </div>
+        <div class="right">
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label pull-left tough-font">号码 :</label>
+                    <div class="col-sm-8 pull-left">
+                        <input type="" class="form-control" id="inputEmail3" placeholder="号码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label pull-left tough-font">日期 :</label>
+                    <div class="col-sm-8 pull-left">
+                        <input type="month" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-8 pull-left">
+                        <button type="button" class="btn-finance-repair finance-block">一键诊断</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="finance-list-title">
+        <div class="title-sun tough-font">诊断报告</div>
+        <div class="title-sun finance-data-normal">正常</div>
+        <div class="title-sun finance-data-attention">关注</div>
+        <div class="title-sun finance-data-unusual">异常</div>
+    </div>
+    <div class="finance-bill-list">
+        <div class="list-sun finance-active-attention">
+            <div class="list-sun-title">
+                <div class="left finance-data tough-font"><span class="tough-font">基本信息</span></div>
+                <div class="right font-color-purple tough-font"><span class="finance-underline">基本信息</span></div>
+            </div>
+            <div class="list-sun-body">
+                <p>该用户号码归属地为：杭州</p>
+                <p>预付费用户</p>
+                <p class="font-color-red">已开通4G功能</p>
+                <p>该用户已欠费停机：<span class="font-color-red">紧急复机</span>（享受星级权益复机)</p>
+                <p>该用户7天内有充值记录：近7天有＊次充值记录，最近一次＊点＊分充值＊元，请确认话费充值次数，最近一次充值时间金额 。<span class="font-color-purple finance-underline">详情</span></p>
+                <p>活动返还：<span class="font-color-red">*月</span>【**】活动的赠送费用<span class="font-color-red">*元</span>已经到账，剩余费用<span class="font-color-red">**元</span>，剩余返还次数<span class="font-color-red">**次</span>。<span class="font-color-purple finance-underline">详情</span></p>
+            </div>
+        </div>
+        <div class="list-sun finance-active-unusual">
+            <div class="list-sun-title">
+                <div class="left finance-data tough-font">超高费用 : <span class="tough-font font-color-red">是</span></div>
+                <div class="right font-color-purple tough-font"><span class="finance-underline">详单</span></div>
+            </div>
+            <div class="list-sun-body">
+                <p>该用户以下日期国际漫游费用单天超过800元 。根据账单中使用比较多的国际费用的类型（语音，流量，短信）查询对应的详单。<span class="font-color-purple finance-underline">国际漫游资费</span></p>
+                <p>153*******号码*月*日产生国际漫游费用**元，其中语音费用产生**元，流量费用产生**元，短信费用产生**元 。</p>
+                <p>189*******号码*月*日产生国际漫游费用**元，其中语音费用产生**元，流量费用产生**元，短信费用产生**元 。</p>
+            </div>
+        </div>
+        <div class="list-sun finance-active-unusual">
+            <div class="list-sun-title">
+                <div class="left finance-data tough-font">账单费用偏高 : <span class="tough-font font-color-red">是</span></div>
+                <div class="right font-color-purple tough-font"><span class="finance-underline">账单查询</span><span class="finance-underline">账单对比</span></div>
+            </div>
+            <div class="list-sun-body">
+                <p>用户<span class="font-color-purple finance-underline">* 月</span>，共使用<span class="font-color-red">**元</span>。</p>
+            </div>
+        </div>
+        <div class="list-sun finance-active-attention">
+            <div class="list-sun-title">
+                <div class="left finance-data tough-font">国际漫游费用 : <span class="tough-font font-color-yon">是</span></div>
+                <!--<div class="right font-color-purple tough-font"><span class="finance-underline">基本信息</span></div>-->
+            </div>
+            <div class="list-sun-body">
+                <p>用户<span class="font-color-red">* 年 *月</span>高额费用是由于国际漫游费用导致,共产生国际漫游费用<span class="font-color-red">**元</span>,占该月账单总费用的<span class="font-color-red">*%</span>,若用户有疑义,先查询详单 。<span class="font-color-purple finance-underline">国际漫游资费</span></p>
+            </div>
+        </div>
+        <div class="list-sun finance-active-unusual">
+            <div class="list-sun-title">
+                <div class="left finance-data tough-font">增值费用偏高 : <span class="tough-font font-color-red">是</span></div>
+                <div class="right font-color-purple tough-font"><span class="finance-underline">账单查询</span><span class="finance-underline">账单对比</span></div>
+            </div>
+            <div class="list-sun-body">
+                <p><span class="font-color-red">*月</span>办理以下业务,共产生增值费用的<span class="font-color-red">*%</span>,请查看<span class="font-color-red">*月</span>账单确定用户使用的号码,具体使用时间需通过详单查询 。<span class="font-color-purple finance-underline">国际漫游资费</span></p>
+            </div>
+        </div>
+        <div class="list-sun finance-active-attention">
+            <div class="list-sun-title">
+                <div class="left finance-data tough-font">语音通信费 : <span class="tough-font font-color-yon">是</span></div>
+                <div class="right font-color-purple tough-font"><span class="finance-underline">语音详情</span></div>
+            </div>
+            <div class="list-sun-body">
+                <p><span class="font-color-red">x月</span>语音通信费用产生<span class="font-color-red">* 元</span>,占该月账单总费用的<span class="font-color-red">*%</span>,具体使用时间需通过详单查询 。<span class="font-color-purple finance-underline">国际漫游资费</span></p>
+            </div>
+        </div>
+        <!--<div class="list-sun finance-active-normal">-->
+            <!--<div class="list-sun-title">-->
+                <!--<div class="left finance-data tough-font">超高费用 : <span class="tough-font font-color-yon">否</span></div>-->
+                <!--<div class="right font-color-purple tough-font"><span class="finance-underline">基本信息</span></div>-->
+            <!--</div>-->
+            <!--<div class="list-sun-body">-->
+                <!--<p>该用户以下日期国际漫游费用单天超过800元 。根据账单中使用比较多的国际费用的类型（语音，流量，短信）查询对应的详单。<span class="font-color-purple finance-underline">国际漫游资费</span></p>-->
+                <!--<p>预付费用户</p>-->
+                <!--<p class="font-color-red">已开通4G功能</p>-->
+                <!--<p>该用户已欠费停机：<span class="font-color-red">紧急复机</span>（享受星级权益复机)</p>-->
+                <!--<p>该用户7天内有充值记录：近7天有＊次充值记录，最近一次＊点＊分充值＊元，请确认话费充值次数，最近一次充值时间金额 。<span class="font-color-purple finance-underline">详情</span></p>-->
+                <!--<p>活动返还：<span class="font-color-red">*月</span>【**】活动的赠送费用<span class="font-color-red">*元</span>已经到账，剩余费用<span class="font-color-red">**元</span>，剩余返还次数<span class="font-color-red">**次</span>。<span class="font-color-purple finance-underline">详情</span></p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="list-sun finance-active-unusual">
+            <div class="list-sun-title">
+                <div class="left finance-data tough-font">有较高流量费产生 : <span class="tough-font font-color-red">是</span></div>
+                <div class="right font-color-purple tough-font"><span class="finance-underline">上网详单</span></div>
+            </div>
+            <div class="list-sun-body">
+                <p><span class="font-color-red">****年*月</span>用户产生较高流量使用费用,占该月账单总费用的<span class="font-color-red">*%</span>,请查看<span class="font-color-red">*月</span>账单确定用户的号码,具体使用时间需通过详单查询 。</p>
+               </div>
+        </div>
+        <div class="list-sun finance-active-attention list-sun-bottom">
+            <div class="list-sun-title">
+                <div class="left finance-data tough-font">有调账记录 : <span class="tough-font font-color-yon">是</span></div>
+
+            </div>
+            <div class="list-sun-body">
+                <p><span class="font-color-red">****年*月</span>为用户调账<span class="font-color-red">**元</span> 。</p>
+            </div>
+        </div>
+        <!--<div class="list-sun finance-active-unusual list-sun-bottom">-->
+            <!--<div class="list-sun-title">-->
+                <!--<div class="left finance-data tough-font">超高费用 : <span class="tough-font font-color-red">是</span></div>-->
+                <!--<div class="right font-color-purple tough-font"><span class="finance-underline">基本信息</span></div>-->
+            <!--</div>-->
+            <!--<div class="list-sun-body">-->
+                <!--<p>该用户以下日期国际漫游费用单天超过800元 。根据账单中使用比较多的国际费用的类型（语音，流量，短信）查询对应的详单。<span class="font-color-purple finance-underline">国际漫游资费</span></p>-->
+                <!--<p>预付费用户</p>-->
+                <!--<p class="font-color-red">已开通4G功能</p>-->
+                <!--<p>该用户已欠费停机：<span class="font-color-red">紧急复机</span>（享受星级权益复机)</p>-->
+                <!--<p>该用户7天内有充值记录：近7天有＊次充值记录，最近一次＊点＊分充值＊元，请确认话费充值次数，最近一次充值时间金额 。<span class="font-color-purple finance-underline">详情</span></p>-->
+                <!--<p>活动返还：<span class="font-color-red">*月</span>【**】活动的赠送费用<span class="font-color-red">*元</span>已经到账，剩余费用<span class="font-color-red">**元</span>，剩余返还次数<span class="font-color-red">**次</span>。<span class="font-color-purple finance-underline">详情</span></p>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-cczd">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle">账单查询</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="finance-alert-header finance-alert-header-mouth">-->
+            <!--<div class="left">-->
+                <!--<input type="month" class="form-control">-->
+                <!--<span>月账单</span>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+                <!--<span class="active">账户账单</span>-->
+                <!--<span>号码账单</span>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="accountbill">-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!-- 国漫超高费用详情 -->
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-cczd">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle">国漫超高费用详情</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<table class="table table-bordered table-inverse" style="width: 100px;margin-left: 50px;margin-top: 20px;border-left: none;float: left">-->
+            <!--<tbody>-->
+            <!--<tr class="header">-->
+                <!--<td style="width: 100px">号码</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td style="width: 100px;height: 57px;line-height: 57px">2016/2/1</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td style="width: 100px;height: 20px">2016/2/1</td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+        <!--<table class="table table-bordered table-inverse" style="width: 600px;margin-top: 20px">-->
+            <!--<tbody>-->
+            <!--<tr class="header">-->
+                <!--<td>号码</td>-->
+                <!--<td>国际流量使用费</td>-->
+                <!--<td>国际短信使用费</td>-->
+                <!--<td>国际语言通信费</td>-->
+                <!--<td>合计</td>-->
+                <!--<td>账单费用占比</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>153********</td>-->
+                <!--<td>700</td>-->
+                <!--<td>10</td>-->
+                <!--<td>190</td>-->
+                <!--<td>900</td>-->
+                <!--<td>25%</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>153********</td>-->
+                <!--<td>700</td>-->
+                <!--<td>10</td>-->
+                <!--<td>190</td>-->
+                <!--<td>900</td>-->
+                <!--<td>25%</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>153********</td>-->
+                <!--<td>700</td>-->
+                <!--<td>10</td>-->
+                <!--<td>190</td>-->
+                <!--<td>900</td>-->
+                <!--<td>25%</td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+<!--</div>-->
+<!-- 详单引导 -->
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-xdyd">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle">详单引导</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+       <!--<div class="finance-alert-body">-->
+           <!--<p><span>短信内容 : </span>尊敬的客户,您可以登陆电信账单健康检查页面(网址 : ************)查看流量具体使用情况. 本机编辑短信551发送至10001可以获取服务密码. </p>-->
+           <!--<div class="finance-alert-body-form">-->
+               <!--<div class="form-group">-->
+                   <!--<label for="" class="col-sm-2 control-label pull-left tough-font">号码 :</label>-->
+                   <!--<div class="col-sm-8 pull-left">-->
+                       <!--<input type="" class="form-control" id="" placeholder="号码">-->
+                   <!--</div>-->
+               <!--</div>-->
+               <!--<div class="form-group">-->
+                   <!--<div class="col-sm-8 pull-right">-->
+                       <!--<button type="button" class="btn-finance-repair">短信引导</button>-->
+                   <!--</div>-->
+               <!--</div>-->
+           <!--</div>-->
+           <!--<p class="roaddetail">上网详单</p>-->
+       <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
+<!-- 详单身份认证 one -->
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-xdyd">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle">详单身份认证</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="finance-alert-body">-->
+            <!--<div class="finance-button">-->
+                <!--<span>详单类型 : </span>-->
+                <!--<select>-->
+                    <!--<option>上网详单</option>-->
+                    <!--<option>上网详单</option>-->
+                    <!--<option>上网详单</option>-->
+                    <!--<option>上网详单</option>-->
+                <!--</select>-->
+            <!--</div>-->
+            <!--<div class="finance-button">-->
+                <!--<span>密码服务 : </span>-->
+                <!--<input type="text">-->
+            <!--</div>-->
+            <!--<div class="finance-button">-->
+                <!--<button type="button" class="btn-finance-repair">查询</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!-- 详单身份认证 two -->
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-xdyd">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle">详单身份认证</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="finance-alert-body">-->
+            <!--<div class="finance-button">-->
+                <!--<span>详单类型 : </span>-->
+                <!--<select>-->
+                    <!--<option>上网详单</option>-->
+                    <!--<option>上网详单</option>-->
+                    <!--<option>上网详单</option>-->
+                    <!--<option>上网详单</option>-->
+                <!--</select>-->
+            <!--</div>-->
+            <!--<div class="finance-button">-->
+                <!--<span>姓    名 : </span>-->
+                <!--<input type="text">-->
+            <!--</div>-->
+            <!--<div class="finance-button">-->
+                <!--<span>身份证 : </span>-->
+                <!--<input type="text">-->
+            <!--</div>-->
+            <!--<div class="finance-button">-->
+                <!--<span>验证码 : </span>-->
+                <!--<input class="writemm" type="text">-->
+                <!--<span class="getmm">验证码获取</span>-->
+            <!--</div>-->
+            <!--<div class="finance-button">-->
+                <!--<button type="button" class="btn-finance-repair">查询</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!-- 温馨提示 -->
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-xdyd">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle font-color-red">温馨提示</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="finance-alert-body">-->
+            <!--<p class="wenxin-tishi-word">该用户详单查询等级为"<span class="font-color-red">3级</span>"可通过营业厅自助查询机查询,可建议用修改详单查询等级. </p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!-- 增值费用详情 sp -->
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-zzxq">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle">增值费用详情</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="finance-alert-body">-->
+            <!--<div class="head">-->
+                <!--<div class="finance-added-button">-->
+                    <!--<span>验证码 : </span>-->
+                    <!--<input class="writemm" type="text">-->
+                <!--</div>-->
+                <!--<div class="finance-added-button">-->
+                    <!--<span>日期 : </span>-->
+                    <!--<input type="month" class="form-control">-->
+                    <!--<select>-->
+                    <!--<option>SP信息</option>-->
+                    <!--<option>8大基地</option>-->
+                    <!--<option selected>声讯</option>-->
+                    <!--<option>彩铃信息</option>-->
+                    <!--</select>-->
+
+                <!--</div>-->
+                <!--<div class="">-->
+                    <!--<button type="button" class="btn-finance-repair">查询</button>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="head">-->
+                <!--<table class="table table-bordered table-inverse" style="margin-top: 30px">-->
+                    <!--<tbody>-->
+                        <!--<tr class="header">-->
+                            <!--<td>业务名称</td>-->
+                            <!--<td>订购时间</td>-->
+                            <!--<td>取消时间</td>-->
+                            <!--<td>接入码</td>-->
+                            <!--<td>计费规则</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>牛币10元</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>包月,月租费10.00元</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>牛币10元</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>包月,月租费10.00元</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>牛币10元</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>20160217</td>-->
+                            <!--<td>包月,月租费10.00元</td>-->
+                        <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+            <!--<div class="head">-->
+                <!--<p class="font-color-red">具体费用以出账为准!</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!-- 增值费用详情 8大 -->
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-zzxq">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle">增值费用详情</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="finance-alert-body">-->
+            <!--<div class="head">-->
+                <!--<div class="finance-added-button">-->
+                    <!--<span>验证码 : </span>-->
+                    <!--<input class="writemm" type="text">-->
+                <!--</div>-->
+                <!--<div class="finance-added-button">-->
+                    <!--<span>日期 : </span>-->
+                    <!--<input type="month" class="form-control">-->
+                    <!--<select>-->
+                    <!--<option>SP信息</option>-->
+                    <!--<option>8大基地</option>-->
+                    <!--<option selected>声讯</option>-->
+                    <!--<option>彩铃信息</option>-->
+                    <!--</select>-->
+
+                <!--</div>-->
+                <!--<div class="">-->
+                    <!--<button type="button" class="btn-finance-repair">查询</button>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="head">-->
+                <!--<table class="table table-bordered table-inverse" style="margin-top: 30px">-->
+                    <!--<tbody>-->
+                    <!--<tr class="header">-->
+                        <!--<td>业务名称</td>-->
+                        <!--<td>基地名称</td>-->
+                        <!--<td>订购时间</td>-->
+                        <!--<td>金额</td>-->
+                        <!--<td>计费类型</td>-->
+                        <!--<td>状态</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>天策应用平台</td>-->
+                        <!--<td>天翼阅读</td>-->
+                        <!--<td>2016-02-15 09:36:01</td>-->
+                        <!--<td>10.00元</td>-->
+                        <!--<td>点播</td>-->
+                        <!--<td>支付成功</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>天策应用平台</td>-->
+                        <!--<td>天翼阅读</td>-->
+                        <!--<td>2016-02-15 09:36:01</td>-->
+                        <!--<td>10.00元</td>-->
+                        <!--<td>点播</td>-->
+                        <!--<td>支付成功</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+            <!--<div class="head">-->
+                <!--<p class="font-color-red">具体费用以出账为准!</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!-- 增值费用详情 声讯 -->
+<!--<div class="finance-alert">-->
+    <!--<div class="finance-alert-zzxq">-->
+        <!--<div class="finance-alert-header">-->
+            <!--<div class="left"></div>-->
+            <!--<div class="middle">增值费用详情</div>-->
+            <!--<div class="right alertfalse">-->
+                <!--x-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="finance-alert-body">-->
+            <!--<div class="head">-->
+                <!--<div class="finance-added-button">-->
+                    <!--<span>验证码 : </span>-->
+                    <!--<input class="writemm" type="text">-->
+                <!--</div>-->
+                <!--<div class="finance-added-button">-->
+                    <!--<span>日期 : </span>-->
+                    <!--<input type="month" class="form-control">-->
+                    <!--<select>-->
+                    <!--<option>SP信息</option>-->
+                    <!--<option>8大基地</option>-->
+                    <!--<option selected>声讯</option>-->
+                    <!--<option>彩铃信息</option>-->
+                    <!--</select>-->
+                <!--</div>-->
+                <!--<div class="">-->
+                    <!--<button type="button" class="btn-finance-repair">查询</button>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="head">-->
+                <!--<table class="table table-bordered table-inverse" style="margin-top: 30px">-->
+                    <!--<tbody>-->
+                    <!--<tr class="header">-->
+                        <!--<td>业务名称</td>-->
+                        <!--<td>节目号码</td>-->
+                        <!--<td>订购时间</td>-->
+                        <!--<td>取消时间</td>-->
+                        <!--<td>金额</td>-->
+                        <!--<td>信息费计费标准</td>-->
+                        <!--<td>状态</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>温州家校通</td>-->
+                        <!--<td>16888169</td>-->
+                        <!--<td>2016-02-15 09:36:01</td>-->
+                        <!--<td>-</td>-->
+                        <!--<td>9.00元</td>-->
+                        <!--<td>包月话单</td>-->
+                        <!--<td>支付成功</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>温州家校通</td>-->
+                        <!--<td>16888169</td>-->
+                        <!--<td>2016-02-15 09:36:01</td>-->
+                        <!--<td>-</td>-->
+                        <!--<td>9.00元</td>-->
+                        <!--<td>包月话单</td>-->
+                        <!--<td>支付成功</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+            <!--<div class="head">-->
+                <!--<p class="font-color-red">具体费用以出账为准!</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!-- 增值费用详情 彩铃信息 -->
+<div class="finance-alert">
+    <div class="finance-alert-zzxq">
+        <div class="finance-alert-header">
+            <div class="left"></div>
+            <div class="middle">增值费用详情</div>
+            <div class="right alertfalse">
+                x
+            </div>
+        </div>
+        <div class="finance-alert-body">
+            <div class="head">
+                <div class="finance-added-button">
+                    <span>验证码 : </span>
+                    <input class="writemm" type="text">
+                </div>
+                <div class="finance-added-button">
+                    <span>日期 : </span>
+                    <input type="month" class="form-control">
+                    <select>
+                        <option>上网详单</option>
+                        <option>上网详单</option>
+                        <option>上网详单</option>
+                        <option>上网详单</option>
+                    </select>
+
+                </div>
+                <div class="">
+                    <button type="button" class="btn-finance-repair">查询</button>
+                </div>
+            </div>
+            <div class="head">
+                <div class="finance-added-button">
+                    <select>
+                        <option>SP信息</option>
+                        <option>8大基地</option>
+                        <option>声讯</option>
+                        <option selected>彩铃信息</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head">
+                <table class="table table-bordered table-inverse" style="margin-top: 30px">
+                    <tbody>
+                    <tr class="header">
+                        <td>歌名</td>
+                        <td>歌手</td>
+                        <td>价格(分)</td>
+                        <td>有效期</td>
+                        <td>更新时间</td>
+                        <td>取消</td>
+                    </tr>
+                    <tr>
+                        <td>小苹果</td>
+                        <td>筷子兄弟</td>
+                        <td>200</td>
+                        <td>2017-06-30235959</td>
+                        <td>?</td>
+                        <td class="font-color-purple" style="text-decoration: underline;cursor: pointer">取消</td>
+                    </tr>
+                    <tr>
+                        <td>小苹果</td>
+                        <td>筷子兄弟</td>
+                        <td>200</td>
+                        <td>2017-06-30235959</td>
+                        <td>?</td>
+                        <td class="font-color-purple" style="text-decoration: underline;cursor: pointer">取消</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="head">
+                <p class="font-color-red">具体费用以出账为准!</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="js/finance.js"></script>
+</body>
+</html>

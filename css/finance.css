@@ -1,0 +1,1011 @@
+
+.container{
+    color: #000000;
+}
+/* public start */
+.btn-finance-repair{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background: #3ab2f0;
+    box-shadow: 0 2px 2px #30567c;
+    color: #ffffff;
+}
+.tough-font{
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+.font-color-purple{
+    color: #7030a0;
+}
+.font-color-red{
+    color: #ff0000;
+}
+.finance-active-normal .list-sun-title .font-color-yon{
+    color: #00bc55;
+}
+.finance-active-attention .list-sun-title .font-color-yon{
+    color: #ff0000;
+}
+.finance-underline{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* public end */
+
+.finance-header{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #c9c9c9;
+}
+.finance-header .left span{
+    float: left;
+    line-height: 90px;
+    margin-left: 10px;
+}
+.finance-bill-icon{
+    background: url("../img/financebill.png") no-repeat center;
+    width: 26px;
+    height: 40px;
+    float: left;
+    margin-top: 25px;
+    background-size: 100%;
+}
+.finance-header .right{
+    float: right;
+    width: auto;
+    height: 90px;
+}
+.finance-header .right .form-group{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.finance-header .right .form-group label{
+    line-height: 28px;
+    margin-right: 10px;
+}
+.finance-list-title{
+    width: 100%;
+    height: 40px;
+}
+.finance-list-title .title-sun{
+    margin-right: 40px;
+    float: left;
+    line-height: 40px;
+    position: relative;
+}
+.finance-list-title .finance-data-normal:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    left: -20px;
+    background: url("../img/normal.png") no-repeat center;
+    background-size: 100%;
+}
+.finance-list-title .finance-data-attention:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    left: -20px;
+    background: url("../img/attention.png") no-repeat center;
+    background-size: 100%;
+}
+.finance-list-title .finance-data-unusual:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    left: -20px;
+    background: url("../img/unusual.png") no-repeat center;
+    background-size: 100%;
+}
+.finance-bill-list{
+    width: 100%;
+    height: auto;
+}
+.finance-bill-list .list-sun{
+    min-height: 30px;
+    margin-left: 9px;
+    border-bottom: 1px dashed #b6b6b6;
+    position: relative;
+}
+.finance-bill-list .list-sun-bottom{
+    border-bottom: none !important;
+}
+.finance-bill-list .list-sun:before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #ffc000;
+}
+.finance-bill-list .list-sun-bottom :before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #ffffff !important;
+}
+.finance-bill-list .list-sun .list-sun-title{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.finance-bill-list .list-sun .list-sun-title:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    right: 0;
+    background: url("../img/turndown.png") no-repeat center;
+    background-size: 100%;
+
+}
+.finance-bill-list .list-sun .list-sun-title .left{
+    position: relative;
+    margin-left: 12px;
+    float: left;
+}
+.finance-bill-list .list-sun .list-sun-title .right{
+    float: right;
+    margin-right: 30px;
+}
+.finance-active-normal .finance-data:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: -20px;
+    background: url("../img/normal.png") no-repeat center;
+    background-size: 100%;
+    z-index: 100;
+}
+.finance-active-attention .finance-data:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: -20px;
+    background: url("../img/attention.png") no-repeat center;
+    background-size: 100%;
+    z-index: 100;
+}
+.finance-active-unusual .finance-data:after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: -20px;
+    background: url("../img/unusual.png") no-repeat center;
+    background-size: 100%;
+    z-index: 100;
+}
+.list-sun-title .left{
+    position: relative;
+}
+
+.finance-bill-list .list-sun .list-sun-body{
+    width: 100%;
+    height: auto;
+    padding-left: 24px;
+    font-size: 12px;
+}
+.finance-bill-list .list-sun .list-sun-body p{
+    line-height: 12px;
+}
+
+/* international-roaming */
+.roaming{
+    width: 580px;
+    margin: 0 auto 0 auto;
+    color: #000000;
+}
+.roaming-place{
+    width: 990px;
+    margin: 0 auto 0 auto;
+    color: #000000;
+}
+.roaming .head{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.roaming-place .head{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.roaming a{
+    color: #7030a0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.roaming .place-choose{
+    color: #000000;
+    font-weight: bolder;
+}
+.roaming .place-choose span{
+    margin-right: 30px;
+}
+.roaming .this-place{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.roaming-table{
+    width: 100%;
+}
+.roaming-table td{
+    text-align: center !important;
+    color: #7030a0;
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* local-roaming */
+.roaming-sounds{
+    width: 100%;
+    float: left;
+    background: #d9d9d9;
+}
+.roaming-message{
+    width: 671px !important;
+}
+.roaming-sounds .bg-deep{
+    width: 100%;
+    background: #a6a6a6;
+}
+.roaming-sounds .sounds-one{
+    width: 90px;
+    height: 270px;
+    float: left;
+    text-align: center;
+    line-height: 270px;
+    border: solid 1px #000000;
+    margin-left: -1px;
+    font-weight: bolder;
+}
+.roaming-sounds .sounds-two{
+    width: 100px;
+    height: 270px;
+    float: left;
+    text-align: center;
+    border: solid 1px #000000;
+    margin-left: -1px;
+    font-weight: bolder;
+}
+
+.roaming-sounds .sounds-two .list-one{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-two .list-two{
+    width: 100%;
+    height: 85px;
+    border-bottom: solid 1px #000000;
+}
+
+.roaming-sounds .sounds-two .list-three{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-two .list-four{
+    width: 100%;
+    height: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.roaming-sounds .sounds-three{
+    width: 60px;
+    height: 270px;
+    float: left;
+    text-align: center;
+    border: solid 1px #000000;
+    margin-left: -1px;
+    font-weight: bolder;
+}
+.roaming-sounds .sounds-three .list-one{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-two{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-three{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-four{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-five{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-three .list-six{
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+}
+.roaming-sounds .sounds-four{
+    float: left;
+    width: 500px;
+    height: 270px;
+}
+.roaming-sounds .sounds-four .list-one{
+    width: 500px;
+    height: 75px;
+    float: left;
+}
+.roaming-sounds .sounds-four .list-one .one{
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-one .one{
+    width: 499px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    border-right: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    border-top: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-one .two{
+    width: 100px;
+    height: 35px;
+    background: #a6a6a6;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    border-bottom: solid 1px #000000;
+    border-right: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-one .three{
+    width: 180px;
+    height: 35px;
+    background: #a6a6a6;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    border-bottom: solid 1px #000000;
+    border-right: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-one .four{
+    width: 217px;
+    height: 35px;
+    background: #a6a6a6;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    border-bottom: solid 1px #000000;
+    border-right: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-two{
+    width: 100px;
+    height: 196px;
+    text-align: center;
+    float: left;
+    border-right: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-two .one{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-two .two{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-two .three{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-two .four{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-two .five{
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-three{
+    width: 180px;
+    height: 196px;
+    text-align: center;
+    float: left;
+    border-right: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-three .one{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-three .two{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-three .three{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-three .four{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-three .five{
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-four{
+    width: 217px;
+    height: 196px;
+    text-align: center;
+    float: left;
+    border-right: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-four .one{
+    width: 100%;
+    height: 87px;
+    line-height: 87px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-four .two{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-four .three{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-four .list-four .four{
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-five{
+    width: 112px;
+    height: 270px;
+    float: left;
+    border-right: solid 1px #000000;
+}
+.roaming-sounds .sounds-five .list-one{
+    width: 112px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+    border-top: solid 1px #000000;
+}
+.roaming-sounds .sounds-five .list-two{
+    width: 112px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-five .list-three{
+    width: 112px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-five .list-four{
+    width: 112px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-five .list-five{
+    width: 112px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-five .list-six{
+    width: 112px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-five .list-seven{
+    width: 112px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+.roaming-sounds .sounds-six{
+    float: left;
+    width: 123px;
+    height: 270px;
+    border-right: solid 1px #000000;
+    border-top: solid 1px #000000;
+}
+.roaming-sounds .sounds-six .list-one{
+    width: 123px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+    color: #ffffff;
+}
+.roaming-sounds .sounds-six .list-two{
+    width: 124px;
+    height: 194px;
+    line-height: 194px;
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+
+.roaming-data-message{
+    position: relative;
+    width: 989px;
+    height: 666px;
+    float: left;
+    margin-left: -1px;
+    border-left: solid 1px #000000;
+    border-right: solid 1px #000000;
+    margin-bottom: 60px;
+}
+.roaming-data-message .remarks{
+    width: 650px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: bolder;
+    height: 92px;
+    float: left;
+    border-right: solid 1px #000000;
+}
+.message-list-one{
+    width: 418px !important;
+}
+.message-list-one-one{
+    width: 417px !important;
+}
+.message-list-one-three{
+    width: 235px !important;
+}
+.message-list-four{
+    width: 80px !important;
+}
+.message-list-four-one{
+    width: 40px !important;
+    height: 196px !important;
+    line-height: 196px !important;
+    float: left !important;
+}
+.message-list-three{
+    width: 80px !important;
+    height: 196px;
+    line-height: 196px;
+    text-align: center;
+    float: left;
+    border-right: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+}
+.remarks-day{
+    height: 30px!important;
+    line-height: 30px!important;
+    text-align: center !important;
+}
+.roaming-message-four{
+    width: 418px !important;
+}
+.billing-style{
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+    width: 298px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: 655px;
+    border-bottom: solid 1px #000000;
+}
+
+/* manifest-detail */
+.manifest-detail{
+    width: 1000px;
+    margin: 20px auto 0 auto;
+    font-size: 14px;
+}
+.manifest-detail-header{
+    width: 100%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+}
+.manifest-detail-header input{
+    width: 140px;
+    margin-right: 20px;
+}
+.manifest-detail-header .title{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.manifest-detail-user{
+    width: 100%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+}
+.manifest-detail-user span{
+    margin-right: 30px;
+}
+.manifest-detail-table{
+    float: left;
+    width: 100%;
+    border: 1px solid #000000;
+}
+.manifest-detail-table table td{
+    text-align: center;
+}
+.manifest-detail-table table .header td{
+    background: #d9d9d9;
+    font-weight: bolder;
+}
+.manifest-detail-table .table-bordered th, .table-bordered td {
+    border-left: 1px dashed #9e9e9e !important;
+}
+.manifest-detail-table .table th, .table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px dashed #9e9e9e !important;
+}
+.table-page-choose{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dashed #9e9e9e;
+}
+.table-page-choose-left{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 40px;
+}
+.table-page-choose-left .active{
+    color: #333 !important;
+    text-decoration: none !important;
+}
+.table-page-choose-left .page-all{
+    float: left;
+    margin-right: 10px;
+}
+.table-page-choose-left ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.table-page-choose-left ul li{
+    float: left;
+    padding: 0;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+}
+.table-page-choose-left .page-first{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #7030a0;
+    text-decoration: underline;
+}
+.table-page-choose-left .page-num{
+    float: left;
+    margin-right: 10px;
+}
+.table-page-choose-left .page-num ul li{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #7030a0;
+    text-decoration: underline;
+}
+.table-page-choose-left .page-next{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #7030a0;
+    text-decoration: underline;
+}
+.table-page-choose-left .page-end{
+    float: left;
+    cursor: pointer;
+    color: #7030a0;
+    text-decoration: underline;
+}
+.table-page-bottom{
+    padding-top: 20px;
+    padding-left: 16px;
+    width: 100%;
+    min-height: 100px;
+}
+.table-page-bottom p{
+    color: #ff0000;
+    font-size: 12px;
+    line-height: 10px !important;
+}
+.finance-alert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+.finance-alert-cczd{
+    width: 800px;
+    min-height: 200px;
+    margin: 160px auto 0 auto;
+    background: #ffffff;
+    border: 1px solid #9dc3e6;
+    border-radius: 4px;
+    box-shadow: 0 0 16px #9dc3e6;
+}
+.finance-alert-xdyd{
+    width: 600px;
+    min-height: 200px;
+    margin: 160px auto 0 auto;
+    background: #ffffff;
+    border: 1px solid #9dc3e6;
+    border-radius: 4px;
+    box-shadow: 0 0 16px #9dc3e6;
+}
+.finance-alert-zzxq{
+    width: 800px;
+    min-height: 200px;
+    margin: 160px auto 0 auto;
+    background: #ffffff;
+    border: 1px solid #9dc3e6;
+    border-radius: 4px;
+    box-shadow: 0 0 16px #9dc3e6;
+}
+.finance-alert-xdid{
+    width: 600px;
+    min-height: 200px;
+    margin: 160px auto 0 auto;
+    background: #ffffff;
+    border: 1px solid #9dc3e6;
+    border-radius: 4px;
+    box-shadow: 0 0 16px #9dc3e6;
+}
+.finance-alert-body{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+.finance-alert-body .head{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    clear: both;
+}
+.finance-alert-body .wenxin-tishi-word{
+    font-size: 16px;
+    font-weight: bolder;
+    text-indent: 2em;
+}
+.finance-alert-body .finance-button{
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+.finance-alert-body .finance-button select{
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+.finance-alert-body .finance-button input{
+    position: absolute;
+    height: 90%;
+    right: 0;
+}
+.finance-alert-body .finance-button .writemm{
+    width: 60px;
+    left: 50%;
+    margin-left: -30px;
+}
+.finance-alert-body .finance-button .getmm{
+    position: absolute;
+    color: #7030a0;
+    text-decoration: underline;
+    right: 0;
+    cursor: pointer;
+}
+.finance-alert-body .finance-button button{
+    position: absolute;
+    height: 90%;
+    left: 50%;
+    margin-left: -50px;
+}
+.finance-alert-body .finance-button span{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.finance-added-button{
+    width: auto;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.finance-added-button .writemm{
+    width: 160px;
+}
+.finance-added-button span{
+    float: left;
+    margin-right: 10px;
+}
+.finance-added-button .btn-finance-repair{
+    margin-top: -2px;
+}
+.finance-added-button input{
+    width: 160px;
+}
+.finance-added-button select{
+    width: 100px;
+}
+.finance-alert-body .finance-alert-body-form{
+    width: 100%;
+    height: 40px;
+}
+.finance-alert-body p{
+    font-weight: normal !important;
+}
+.finance-alert-body .roaddetail{
+    text-align: center;
+    color: #7030a0;
+    font-weight: 900!important;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.finance-alert-body p span{
+    font-size: 16px;
+    font-weight: bolder !important;
+}
+.finance-alert .finance-alert-header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bolder;
+    position: relative;
+    background: #9dc3e6;
+}
+.finance-alert .finance-alert-header-mouth{
+    background: #ffffff;
+}
+.finance-alert .finance-alert-header .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.finance-alert .finance-alert-header .middle{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    left: 50%;
+    top: 0;
+    margin-left: -200px;
+    letter-spacing: 1px;
+}
+.finance-alert .finance-alert-header .font-color{
+    color: #ff0000 !important;
+}
+.finance-alert .finance-alert-header .right{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 24px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.finance-alert .finance-alert-header-mouth .left{
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+}
+.finance-alert .finance-alert-header-mouth .right{
+    top: 5px;
+    right: 10px;
+    font-size: 13px;
+}
+.finance-alert .finance-alert-header-mouth .right .active{
+    color: #fdab85;
+}
+.finance-alert .accountbill{
+    width: 700px;
+    height: 400px;
+    margin: 10px auto 20px auto;
+}
