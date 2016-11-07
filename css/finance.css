@@ -836,6 +836,15 @@
     border-radius: 4px;
     box-shadow: 0 0 16px #9dc3e6;
 }
+.finance-alert .finance-alert-wrong{
+    width: 300px !important;
+    min-height: 200px;
+    margin: 160px auto 0 auto;
+    background: #ffffff;
+    border: 1px solid #9dc3e6;
+    border-radius: 4px;
+    box-shadow: 0 0 16px #9dc3e6;
+}
 .finance-alert-zzxq{
     width: 800px;
     min-height: 200px;
